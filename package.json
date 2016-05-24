@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "test": "./node_modules/.bin/mocha",
-=======
-    "test": "./node_modules/.bin/mocha ./test/test*.js",
->>>>>>> upstream/master
     "package": "zip -r -X roskilde-api-lambda.zip .",
     "deploy": ""
   },
