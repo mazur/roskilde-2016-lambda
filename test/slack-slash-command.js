@@ -1,6 +1,6 @@
 'use strict'
 
-const roskildeFunction = require('./slack-slash-command/handler');
+const roskildeFunction = require('../slack-slash-command/handler');
 const assert = require('chai').assert;
 
 function testDefaultRoskildeCommand(text, done) {
@@ -19,8 +19,8 @@ function testDefaultRoskildeCommand(text, done) {
 }
 
 
-describe('Roskilde', function() { 
-  this.timeout(15000);
+describe('Slack slash command', function() { 
+  this.timeout(5000);
 
   it('should get acts by day', done => testDefaultRoskildeCommand('day+Friday', done));
   it('should get acts by shorthand day', done => testDefaultRoskildeCommand('day+sat', done));
